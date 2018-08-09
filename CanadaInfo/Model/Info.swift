@@ -13,6 +13,8 @@ struct Info {
     let title: String
     let rows: [Rows]
     
+    
+    
     static func artistsFromBundle() -> [Info] {
         
         var artists = [Info]()

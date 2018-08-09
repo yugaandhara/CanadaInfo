@@ -20,15 +20,15 @@
 		C3412838211AAB2800B747F0 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412837211AAB2800B747F0 /* Info.swift */; };
 		C3412839211AAB2800B747F0 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412837211AAB2800B747F0 /* Info.swift */; };
 		C341283A211AAB2800B747F0 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412837211AAB2800B747F0 /* Info.swift */; };
-		C341283E211AC04000B747F0 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341283D211AC04000B747F0 /* Handler.swift */; };
-		C341283F211AC04000B747F0 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341283D211AC04000B747F0 /* Handler.swift */; };
-		C3412840211AC04000B747F0 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C341283D211AC04000B747F0 /* Handler.swift */; };
 		C3412842211ACA9F00B747F0 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412841211ACA9F00B747F0 /* InfoTableViewCell.swift */; };
 		C3412843211ACA9F00B747F0 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412841211ACA9F00B747F0 /* InfoTableViewCell.swift */; };
 		C3412844211ACA9F00B747F0 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412841211ACA9F00B747F0 /* InfoTableViewCell.swift */; };
-		C3FF504A211AF7510045408A /* Information.json in Resources */ = {isa = PBXBuildFile; fileRef = C3FF5049211AF7510045408A /* Information.json */; };
-		C3FF504B211AF7510045408A /* Information.json in Resources */ = {isa = PBXBuildFile; fileRef = C3FF5049211AF7510045408A /* Information.json */; };
-		C3FF504C211AF7510045408A /* Information.json in Resources */ = {isa = PBXBuildFile; fileRef = C3FF5049211AF7510045408A /* Information.json */; };
+		C3E924C3211C43B600AF2344 /* CanadaInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E924C2211C43B600AF2344 /* CanadaInfo.swift */; };
+		C3E924C5211C43BE00AF2344 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E924C4211C43BE00AF2344 /* Row.swift */; };
+		C3E924C6211C521D00AF2344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412800211AA93600B747F0 /* ViewController.swift */; };
+		C3E924C7211C521D00AF2344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412800211AA93600B747F0 /* ViewController.swift */; };
+		C3F6659D211C35970074B0FF /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6659C211C35970074B0FF /* RequestManager.swift */; };
+		C3F6659F211C36340074B0FF /* CanadaRequestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F6659E211C36340074B0FF /* CanadaRequestProvider.swift */; };
 		D1D8BBB7587EB50EE7E14E63 /* Pods_CanadaInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EC76986BCAE3AC73113CADA /* Pods_CanadaInfo.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,9 +66,11 @@
 		C3412820211AA93600B747F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3412833211AAAAC00B747F0 /* Rows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rows.swift; sourceTree = "<group>"; };
 		C3412837211AAB2800B747F0 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
-		C341283D211AC04000B747F0 /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 		C3412841211ACA9F00B747F0 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
-		C3FF5049211AF7510045408A /* Information.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Information.json; sourceTree = "<group>"; };
+		C3E924C2211C43B600AF2344 /* CanadaInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanadaInfo.swift; sourceTree = "<group>"; };
+		C3E924C4211C43BE00AF2344 /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		C3F6659C211C35970074B0FF /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		C3F6659E211C36340074B0FF /* CanadaRequestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaRequestProvider.swift; sourceTree = "<group>"; };
 		E6F9B49D10EF8BB1E821DE2D /* Pods-CanadaInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaInfo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CanadaInfo/Pods-CanadaInfo.debug.xcconfig"; sourceTree = "<group>"; };
 		F21E8A5AABFBEF11CC1454D8 /* Pods-CanadaInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanadaInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CanadaInfo/Pods-CanadaInfo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,13 +134,11 @@
 		C34127FD211AA93600B747F0 /* CanadaInfo */ = {
 			isa = PBXGroup;
 			children = (
-				C3FF5049211AF7510045408A /* Information.json */,
 				C3412802211AA93600B747F0 /* Main.storyboard */,
 				C34127FE211AA93600B747F0 /* AppDelegate.swift */,
 				C341283C211AAE3D00B747F0 /* ViewModel */,
 				C3412832211AAA8500B747F0 /* Model */,
 				C3412831211AAA6E00B747F0 /* View */,
-				C3412800211AA93600B747F0 /* ViewController.swift */,
 				C3412805211AA93600B747F0 /* Assets.xcassets */,
 				C3412807211AA93600B747F0 /* LaunchScreen.storyboard */,
 				C341280A211AA93600B747F0 /* Info.plist */,
@@ -167,6 +167,7 @@
 		C3412831211AAA6E00B747F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C3412800211AA93600B747F0 /* ViewController.swift */,
 				C3412841211ACA9F00B747F0 /* InfoTableViewCell.swift */,
 			);
 			path = View;
@@ -175,6 +176,8 @@
 		C3412832211AAA8500B747F0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C3E924C2211C43B600AF2344 /* CanadaInfo.swift */,
+				C3E924C4211C43BE00AF2344 /* Row.swift */,
 				C3412833211AAAAC00B747F0 /* Rows.swift */,
 				C3412837211AAB2800B747F0 /* Info.swift */,
 			);
@@ -184,7 +187,8 @@
 		C341283C211AAE3D00B747F0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C341283D211AC04000B747F0 /* Handler.swift */,
+				C3F6659C211C35970074B0FF /* RequestManager.swift */,
+				C3F6659E211C36340074B0FF /* CanadaRequestProvider.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -309,7 +313,6 @@
 			files = (
 				C3412809211AA93600B747F0 /* LaunchScreen.storyboard in Resources */,
 				C3412806211AA93600B747F0 /* Assets.xcassets in Resources */,
-				C3FF504A211AF7510045408A /* Information.json in Resources */,
 				C3412804211AA93600B747F0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +321,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FF504B211AF7510045408A /* Information.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +328,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3FF504C211AF7510045408A /* Information.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,10 +380,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3412801211AA93600B747F0 /* ViewController.swift in Sources */,
+				C3E924C3211C43B600AF2344 /* CanadaInfo.swift in Sources */,
 				C3412838211AAB2800B747F0 /* Info.swift in Sources */,
+				C3F6659D211C35970074B0FF /* RequestManager.swift in Sources */,
 				C3412834211AAAAC00B747F0 /* Rows.swift in Sources */,
 				C3412842211ACA9F00B747F0 /* InfoTableViewCell.swift in Sources */,
-				C341283E211AC04000B747F0 /* Handler.swift in Sources */,
+				C3F6659F211C36340074B0FF /* CanadaRequestProvider.swift in Sources */,
+				C3E924C5211C43BE00AF2344 /* Row.swift in Sources */,
 				C34127FF211AA93600B747F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,10 +395,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E924C6211C521D00AF2344 /* ViewController.swift in Sources */,
 				C3412839211AAB2800B747F0 /* Info.swift in Sources */,
 				C3412843211ACA9F00B747F0 /* InfoTableViewCell.swift in Sources */,
 				C3412835211AAAAC00B747F0 /* Rows.swift in Sources */,
-				C341283F211AC04000B747F0 /* Handler.swift in Sources */,
 				C3412814211AA93600B747F0 /* CanadaInfoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,10 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E924C7211C521D00AF2344 /* ViewController.swift in Sources */,
 				C341283A211AAB2800B747F0 /* Info.swift in Sources */,
 				C3412844211ACA9F00B747F0 /* InfoTableViewCell.swift in Sources */,
 				C3412836211AAAAC00B747F0 /* Rows.swift in Sources */,
-				C3412840211AC04000B747F0 /* Handler.swift in Sources */,
 				C341281F211AA93600B747F0 /* CanadaInfoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
