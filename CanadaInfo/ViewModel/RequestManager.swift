@@ -34,11 +34,11 @@ class RequestManager: NSObject {
      This method will parse json data.
      */
     func parseData(data: Data) -> [String: AnyObject]? {
-        print(data)
         let dataString = NSString(data: data, encoding: String.Encoding.isoLatin1.rawValue)
         if let jsonData = dataString?.data(using: String.Encoding.utf8.rawValue) {
             do {
                 if let json = try JSONSerialization.jsonObject(with: jsonData, options: .allowFragments) as? [String: AnyObject] {
+                    print("JSON: ", json)
                     return json
                 } else {
                     let jsonErrorString = String(data: jsonData, encoding: String.Encoding(rawValue: String.Encoding.utf8.rawValue))

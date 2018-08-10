@@ -24,6 +24,8 @@ class ViewController: UIViewController {
      */
     var rowArray = [Row]()
     
+    var refreshControl = UIRefreshControl()
+    
     //MARK: - View controller life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +33,18 @@ class ViewController: UIViewController {
         infoTableView.isHidden = true
         infoTableView.rowHeight = UITableViewAutomaticDimension
         infoTableView.estimatedRowHeight = 144
-        //infoTableView.reloadData()
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Fetching Canada Info ...")
+        refreshControl.addTarget(self, action: #selector(ViewController.refreshCanadaInfoData(_:)), for: .valueChanged)
+        if #available(iOS 10.0, *) {
+            infoTableView.refreshControl = refreshControl
+        } else {
+            infoTableView.addSubview(refreshControl)
+        }
+    }
+    
+    @objc private func refreshCanadaInfoData(_ sender: Any) {
+        webServiceCall()
     }
     
     /** This method will send request and get back with response from server
@@ -44,6 +57,7 @@ class ViewController: UIViewController {
             self?.navigationItem.title = title
             self?.rowArray = response.rows
             self?.infoTableView.reloadData()
+            self?.refreshControl.endRefreshing()
         }) { (error: Error?) -> Void in
             print(error as Any)
         }
