@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 
 /** This is ViewController class
  */
@@ -24,6 +22,8 @@ class ViewController: UIViewController {
      */
     var rowArray = [Row]()
     
+    /** UIRefreshControl object
+     */
     var refreshControl = UIRefreshControl()
     
     //MARK: - View controller life cycle
@@ -33,7 +33,6 @@ class ViewController: UIViewController {
         infoTableView.isHidden = true
         infoTableView.rowHeight = UITableViewAutomaticDimension
         infoTableView.estimatedRowHeight = 144
-        
         refreshControl.attributedTitle = NSAttributedString(string: "Fetching Canada Info ...")
         refreshControl.addTarget(self, action: #selector(ViewController.refreshCanadaInfoData(_:)), for: .valueChanged)
         if #available(iOS 10.0, *) {
@@ -55,6 +54,7 @@ class ViewController: UIViewController {
             self?.infoTableView.isHidden = false
             let title = response.title
             self?.navigationItem.title = title
+            self?.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-Bold", size: 22)!]
             self?.rowArray = response.rows
             self?.infoTableView.reloadData()
             self?.refreshControl.endRefreshing()

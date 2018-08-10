@@ -24,13 +24,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Canada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sTs-Xy-brz">
-                                <rect key="frame" x="85.5" y="315" width="204" height="36"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                <rect key="frame" x="68.5" y="312" width="238" height="42"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="55"/>
+                                </variation>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.28005746729744563" green="0.58410568360560888" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.37744434399999999" green="0.72856618070000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sTs-Xy-brz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="A4y-lm-Z1W"/>
                             <constraint firstItem="sTs-Xy-brz" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Cmu-2R-BKN"/>

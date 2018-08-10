@@ -50,7 +50,7 @@ class CanadaRequestProvider: RequestManager {
     /**
      This method will convert json into model calss.
      */
-    func parseDataForCanada(_ json: [String: AnyObject]?, sucess: (CanadaInfo) -> Void, failure: ((NSError)?) -> Void) -> Void {
+    func parseDataForCanada(_ json: [String: Any]?, sucess: (CanadaInfo) -> Void, failure: ((NSError)?) -> Void) -> Void {
         guard let jsonData = json,
             let title = jsonData["title"] as? String,
             let rowsObject = jsonData["rows"] as? [[String: AnyObject]] else {

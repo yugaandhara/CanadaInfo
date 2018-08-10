@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import Alamofire
 
 //MARK: - typealise
-typealias ServiceResponse = ([String: AnyObject]?, Error?) -> Void
+typealias ServiceResponse = ([String: Any]?, Error?) -> Void
 
 /** This is RequestManager class
  */
@@ -18,16 +19,14 @@ class RequestManager: NSObject {
      This method will send request on Server.
      */
     func makeRequestWithURL(_ request: URLRequest, completionHandler: @escaping (ServiceResponse)) {
-        let session = URLSession.shared
-        let task = session.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
-            if error != nil {
-                print(error?.localizedDescription as Any)
-            } else {
-                let json = self?.parseData(data: data!)
-                completionHandler(json, error)
-            }
-        })
-        task.resume()
+        Alamofire.request("https://dl.dropboxusercontent.com/s/2iodh4vg0eortkl/facts.json", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil)
+            .responseJSON { response in
+                // JSON contains "É" in third last object. Used JSONSerialization.
+                if let data = response.data {
+                    let json = self.parseData(data: data)
+                    completionHandler(json, nil)
+                }
+        }
     }
     
     /**
