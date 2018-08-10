@@ -17,6 +17,7 @@
 		C3412842211ACA9F00B747F0 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412841211ACA9F00B747F0 /* InfoTableViewCell.swift */; };
 		C3412843211ACA9F00B747F0 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412841211ACA9F00B747F0 /* InfoTableViewCell.swift */; };
 		C3412844211ACA9F00B747F0 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412841211ACA9F00B747F0 /* InfoTableViewCell.swift */; };
+		C3C0AA0A211DAA36003FDE5F /* CustomeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C0AA09211DAA36003FDE5F /* CustomeImageView.swift */; };
 		C3E924C6211C521D00AF2344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412800211AA93600B747F0 /* ViewController.swift */; };
 		C3E924C7211C521D00AF2344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3412800211AA93600B747F0 /* ViewController.swift */; };
 		C3E924CA211D533D00AF2344 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E924C9211D533D00AF2344 /* Utility.swift */; };
@@ -60,6 +61,7 @@
 		C341281E211AA93600B747F0 /* CanadaInfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaInfoUITests.swift; sourceTree = "<group>"; };
 		C3412820211AA93600B747F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3412841211ACA9F00B747F0 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		C3C0AA09211DAA36003FDE5F /* CustomeImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeImageView.swift; sourceTree = "<group>"; };
 		C3E924C9211D533D00AF2344 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		C3E924CB211D5D1600AF2344 /* CanadaInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanadaInfo.swift; sourceTree = "<group>"; };
 		C3E924CD211D5D3700AF2344 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			children = (
 				C3F6659C211C35970074B0FF /* RequestManager.swift */,
 				C3F6659E211C36340074B0FF /* CanadaRequestProvider.swift */,
+				C3C0AA09211DAA36003FDE5F /* CustomeImageView.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				C3412842211ACA9F00B747F0 /* InfoTableViewCell.swift in Sources */,
 				C3E924CA211D533D00AF2344 /* Utility.swift in Sources */,
 				C3E924CE211D5D3700AF2344 /* Row.swift in Sources */,
+				C3C0AA0A211DAA36003FDE5F /* CustomeImageView.swift in Sources */,
 				C3F6659F211C36340074B0FF /* CanadaRequestProvider.swift in Sources */,
 				C34127FF211AA93600B747F0 /* AppDelegate.swift in Sources */,
 				C3E924CC211D5D1600AF2344 /* CanadaInfo.swift in Sources */,

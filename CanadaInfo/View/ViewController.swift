@@ -65,20 +65,4 @@ class ViewController: UIViewController {
 }
 
 
-//MARK: - Extention of ViewController for UITableViewDataSource methods
-extension ViewController: UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return rowArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: infoTableViewCellID, for: indexPath) as! InfoTableViewCell
-        let content = rowArray[indexPath.row]
-        cell.setdataOnCell(content, indexPath: indexPath.row)
-        return cell
-    }
-}
+

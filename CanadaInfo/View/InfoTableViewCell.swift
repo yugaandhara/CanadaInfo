@@ -15,7 +15,8 @@ class InfoTableViewCell: UITableViewCell {
     //MARK: - IBOutlet
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var discriptionLabel: UILabel!
-    @IBOutlet weak var infoImageView: UIImageView!
+    @IBOutlet weak var infoImageView: CustomeImageView!
+    
     
     /** Activity Indicator for images
      */

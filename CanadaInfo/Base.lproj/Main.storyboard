@@ -47,7 +47,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s2p-ch-Omn">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s2p-ch-Omn" customClass="CustomeImageView" customModule="CanadaInfo" customModuleProvider="target">
                                                     <rect key="frame" x="102" y="36" width="170" height="160"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="160" id="4a5-Ye-KUW"/>
@@ -71,7 +71,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="discriptionLabel" destination="6sD-DV-fb4" id="03r-Pn-MBm"/>
-                                            <outlet property="infoImageView" destination="s2p-ch-Omn" id="1Lq-UT-Jvz"/>
+                                            <outlet property="infoImageView" destination="s2p-ch-Omn" id="ITt-pl-oQy"/>
                                             <outlet property="titleLabel" destination="0d6-V0-YTx" id="3kA-jB-0Ty"/>
                                         </connections>
                                     </tableViewCell>

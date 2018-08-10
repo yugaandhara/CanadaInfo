@@ -9,31 +9,21 @@
 import Foundation
 import UIKit
 
-//MARK: - Extention of UIImageView for download images
-extension UIImageView {
-    func downloadFrom(link: String, contentMode mode: UIViewContentMode, showActivity: UIActivityIndicatorView? = nil) {
-        guard let url = URL(string: link) else { return }
-        contentMode = mode
-        URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) -> Void in
-            guard let mineType = response?.mimeType, mineType.hasPrefix("image"),
-                let data = data, error == nil,
-                let image = UIImage(data: data) else {
-                    DispatchQueue.main.async { () -> Void in
-                        let tempImage = UIImage(named: "placeHolderImage")
-                        self.image = tempImage
-                        if let showActivityIndicator = showActivity {
-                            showActivityIndicator.stopAnimating()
-                        }
-                    }
-                    return
-            }
-            DispatchQueue.main.async { () -> Void in
-                self.image = image
-                if let showActivityIndicator = showActivity {
-                    showActivityIndicator.stopAnimating()
-                }
-            }
-        }).resume()
+//MARK: - Extention of ViewController for UITableViewDataSource methods
+extension ViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rowArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: infoTableViewCellID, for: indexPath) as! InfoTableViewCell
+        let content = rowArray[indexPath.row]
+        cell.setdataOnCell(content, indexPath: indexPath.row)
+        return cell
     }
 }
 
