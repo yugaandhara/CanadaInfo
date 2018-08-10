@@ -9,14 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CanadaInfo/Model/Info.swift"
-            timestampString = "555502204.517023"
+            filePath = "CanadaInfo/View/InfoTableViewCell.swift"
+            timestampString = "555573544.9243619"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "artistsFromBundle()"
-            landmarkType = "7">
+            startingLineNumber = "32"
+            endingLineNumber = "32">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,77 +24,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CanadaInfo/View/InfoTableViewCell.swift"
-            timestampString = "555503649.968218"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "setdataOnCell(_:indexPath:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CanadaInfo.InfoTableViewCell.setdataOnCell(CanadaInfo.Row, indexPath: Swift.Int) -&gt; ()"
-                  moduleName = "CanadaInfo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac_admin/Documents/Demo%20Projects/CanadaInfo/CanadaInfo/View/InfoTableViewCell.swift"
-                  timestampString = "555503650.133213"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "1233">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "implicit closure #1 : @autoclosure () throws -&gt; Swift.String in CanadaInfo.InfoTableViewCell.setdataOnCell(CanadaInfo.Row, indexPath: Swift.Int) -&gt; ()"
-                  moduleName = "CanadaInfo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac_admin/Documents/Demo%20Projects/CanadaInfo/CanadaInfo/View/InfoTableViewCell.swift"
-                  timestampString = "555503650.136079"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CanadaInfo/View/InfoTableViewCell.swift"
-            timestampString = "555503649.968434"
+            timestampString = "555573544.924685"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "32"
             endingLineNumber = "32"
-            landmarkName = "setdataOnCell(_:indexPath:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CanadaInfo/ViewController.swift"
-            timestampString = "555503649.968505"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "webServiceCall()"
-            landmarkType = "7">
+            landmarkName = "InfoTableViewCell"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

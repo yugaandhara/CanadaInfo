@@ -8,9 +8,15 @@
 
 import Foundation
 
+//MARK: - typealise
 typealias ServiceResponse = ([String: AnyObject]?, Error?) -> Void
 
+/** This is RequestManager class
+ */
 class RequestManager: NSObject {
+    /**
+     This method will send request on Server.
+     */
     func makeRequestWithURL(_ request: URLRequest, completionHandler: @escaping (ServiceResponse)) {
         let session = URLSession.shared
         let task = session.dataTask(with: request, completionHandler: { [weak self] (data, response, error) in
@@ -24,6 +30,9 @@ class RequestManager: NSObject {
         task.resume()
     }
     
+    /**
+     This method will parse json data.
+     */
     func parseData(data: Data) -> [String: AnyObject]? {
         print(data)
         let dataString = NSString(data: data, encoding: String.Encoding.isoLatin1.rawValue)
